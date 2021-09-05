@@ -188,10 +188,6 @@ nav{
   transition: all 0.3s linear;
 }
 
-.show-links{
-  height: 200px;
-}
-
 .links a {
   background-color: var(--clr-white);
   color: var(--clr-grey-1);
@@ -259,7 +255,7 @@ nav{
 header{
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0)),
-    url(./img/first.jpg) center/cover no-repeat;
+    url(./img/Zoom.jpg) center/cover no-repeat;
 }
 
 .banner{
@@ -327,6 +323,15 @@ header{
 .section {
   padding-bottom: 5rem;
 }
+
+.title h2{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title h2 span{
+ color: var(--indigo);
+}
 /*about*/
 
 /*end of about*/
@@ -357,5 +362,43 @@ footer p{
   text-transform: capitalize;
   letter-spacing: 0.2rem;
   margin-bottom: 0;
+}
+
+.top-link{
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--indigo);
+  display: grid;
+  place-items: center;
+  height: 40px;
+  width: 40px;
+  font-size: 1.5rem;
+  color: var(--clr-white);
+  animation: bounce 2s ease-in-out infinite;
+
+  visibility: hidden;
+  z-index: -100;
+}
+
+.show-links{
+  visibility: visible;
+  z-index: 100;
+}
+
+@keyframes bounce{
+  0%{
+    transform: scale(1);
+  }
+
+  50%{
+    transform: scale(1.5);
+  }
+
+  100%{
+    transform: scale(1);
+  }
 }
 /*end of footer*/
