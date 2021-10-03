@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--stylesheet-->
-    <link rel="stylesheet" href="style.css">
+    <!--bootstrap stylesheet-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!--main stylesheet-->
+    <link rel="stylesheet" href="./css/style.css">
     <!--fontawesome-->
+    <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./font/fontawesome-free-5.12.0-web/css/all.css">
     <!--favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png">
@@ -33,25 +36,44 @@
                 <!--links-->
             <div class="links-container">
               <ul class="links">
-                <li>
-                  <a href="#home" class="scroll-link">home</a>
+                <li class="nav-item">
+                  <a href="#home" class="scroll-link nav-link">home</a>
                 </li>
                 <li>
-                  <a href="#about" class="scroll-link">about me</a>
+                  <a href="#about" class="scroll-link nav-link">about me</a>
                 </li>
                 <li>
-                  <a href="#services" class="scroll-link">services</a>
+                  <a href="#services" class="scroll-link nav-link">services</a>
                 </li>
                 <li>
-                  <a href="#work" class="scroll-link">works</a>
+                  <a href="#work" class="scroll-link nav-link">works</a>
                 </li>
                 <li>
-                  <a href="#blog" class="scroll-link">blog</a>
+                  <a href="#blog" class="scroll-link nav-link">blog</a>
                 </li>
                 <li>
-                  <a href="#contact" class="scroll-link">contact</a>
+                  <a href="#contact" class="scroll-link nav-link">contact</a>
                 </li>
               </ul>
+              <ul class="nav-information">
+                <li>
+                  <a href="tel: +233 540 61 9403" class="nav-link"><span class="info-icon"><i class="fas fa-phone"></i></span></a>
+                </li>
+
+                <li>
+                  <a href="https://wa.me/message/P2XUUIEDDUWVI1" class=" nav-link"><span class="info-icon"><i class="fab fa-whatsapp"></i></span></a>
+                </li>
+
+                <li>
+                  <a href="https://www.facebook.com/Blay300/" class="nav-link"><span class="info-icon"><i class="fab fa-facebook"></i></span></a>
+                </li>
+
+                <li>
+                  <a href="#" class="nav-link"><span class="info-icon"><i class="fab fa-instagram"></i></span></a>
+                </li>
+
+            
+        </ul>
             </div>
           <!--end of links-->
             </div>
@@ -70,9 +92,89 @@
     </header>
     <!--end of header-->
     <!--about me-->
-    <section id="about" class="section">
-        <div class="title">
-            <h2>about <span>me</span></h2>
+    <section id="about" class="section about-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="about-box-shadow">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="about-img">
+                          <img src="img/profile.jpg" class="img-fluid rounded b-shadow-a" alt="Profile-photo">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-7">
+                        <div class="about-info">
+                          <p><span class="title-s">Name:</span> <span>Samuel Blay</span></p>
+                          <p><span class="title-s">Profile: </span> <span>Web Developer, Bookkeeper and Data Entry Specialist</span></p>
+                          <p><span class="title-s">Email: </span> <span>blaysamuel0@gmail.com</span></p>
+                          <p><span class="title-s">Phone: </span> <span>+233 540 61 9403</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-mf">
+                      <p class="title-s">Skills</p>
+                      <span>HTML</span> <span class="pull-right">80%</span>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+                          aria-valuemax="100"></div>
+                      </div>
+                      <span>CSS3</span> <span class="pull-right">80%</span>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+                          aria-valuemax="100"></div>
+                      </div>
+                      <span>JAVASCRIPT</span> <span class="pull-right">75%</span>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                          aria-valuemax="100"></div>
+                      </div>
+                      <span>TALLY ERP9</span> <span class="pull-right">90%</span>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                          aria-valuemax="100"></div>
+                      </div>
+                      <span>QUICKBOOKS ACCOUNTING AND POS</span> <span class="pull-right">80%</span>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+                          aria-valuemax="100"></div>
+                      </div>
+                      <span>MICROSOFT OFFICE</span> <span class="pull-right">80%</span>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+                          aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="about-me pt-4 pt-md-0">
+                      <div class="title">
+                        <h2>about <span>me</span></h2>
+                      </div>
+                      <p class="lead">
+                        Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
+                        imperdiet et, porttitor
+                        at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla
+                        porttitor accumsan tincidunt.
+                      </p>
+                      <p class="lead">
+                        Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
+                        porttitor volutpat. Vestibulum
+                        ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
+                      </p>
+                      <p class="lead">
+                        Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                        Nulla porttitor accumsan
+                        tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
     </section>
     <!--end of about-->
@@ -113,7 +215,11 @@
 <!--end of footer-->
 <!--back to top-->
 <a href="#home" class="scroll-link top-link"><i class="fas fa-arrow-up"></i></a>
-<!--javascript-->
-<script src="./main.js"></script>
+<!--jquery-->
+<script src="./js/jquery-3.3.1.min.js"></script>
+<!--bootstrap javascript-->
+<script src="./js/bootstrap.bundle.min.js"></script>
+<!--main javascript-->
+<script src="./js/main.js"></script>
 </body>
 </html>

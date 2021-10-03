@@ -2,12 +2,14 @@
 const toggle = document.querySelector(".nav-toggle");
 const linkContainer = document.querySelector(".links-container");
 const links = document.querySelector(".links")
+const navInfo = document.querySelector(".nav-information");
+
 
 
 // close links
 toggle.addEventListener("click", getToggle = () => {
     const containerHeight = linkContainer.getBoundingClientRect().height;
-    const linksHeight = links.getBoundingClientRect().height;
+    const linksHeight = links.getBoundingClientRect().height + navInfo.getBoundingClientRect().height;
 
     if (containerHeight === 0) {
         linkContainer.style.height =  `${linksHeight}px` 
