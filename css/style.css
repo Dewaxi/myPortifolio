@@ -399,7 +399,7 @@ nav {
 header {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0)),
-    url(./img/Zoom.jpg) center/cover no-repeat;
+    url(../img/counters-bg.jpg) center/cover no-repeat;
 }
 
 .banner {
@@ -676,6 +676,10 @@ end of services
 ======================================*/
 
 /*work*/
+.protifolio-title {
+  padding: 3rem 0;
+}
+
 .work-box {
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
